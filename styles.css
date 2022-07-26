@@ -1,5 +1,21 @@
+* {
+   color: white;
+   font-family: sans-serif;
+}
+body {
+   background-color: rgb(51 65 85);
+}
+
 h1 {
    text-align: center;
+}
+
+ol {
+   list-style: none;
+   align-self: center;
+   text-align: center;
+   list-style-position: inside;
+   padding-right: 40px;
 }
 
 div {
@@ -11,21 +27,44 @@ div {
 }
 
 #launchForm {
-   background-color: #ECF0F1;
+   background-color: rgb(30 41 59);
    text-align: center;
    margin: auto;
    width: 25%;
    border: 3px solid black;
    padding: 10px;
+   border-radius: 20px;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   align-items: center;
 }
 
 #launchStatusCheck {
-   background-color: #ECF0F1;
+   background-color: rgb(30 41 59);
    text-align: center;
    margin: 50px auto;
    width: 50%;
    border: 3px solid black;
    padding: 10px;
+   border-radius: 20px;
+}
+
+input {
+   color: white;
+   background-color: rgb(15 23 42);
+   outline: none;
+   padding: 8px;
+   margin-left: 5px;
+   border: 0px;
+   border-radius: 5px;
+}
+
+input:focus {
+   outline:none;
 }
 
 #missionTarget img {
@@ -34,12 +73,16 @@ div {
 }
 
 #missionTarget {
-   background-color: #ECF0F1;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: rgb(30 41 59);
    text-align: center;
    margin: 50px auto;
    width: 50%;
    border: 3px solid black;
    padding: 10px;
+   border-radius: 20px;
 }
 
 button {

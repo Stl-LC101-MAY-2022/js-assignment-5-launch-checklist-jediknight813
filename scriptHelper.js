@@ -18,7 +18,6 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
 }
 
 
-// why use this for validation?
 function validateInput(testInput) {
    if (testInput === undefined || testInput == ""){ 
         return "Empty"
@@ -34,7 +33,7 @@ function validateInput(testInput) {
 
 function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     let form_input_passed = true
-    //let launchStatus = document.getElementById("launchStatus")
+    let launchStatus = document.getElementById("launchStatus")
     let pilotStatus = document.getElementById("pilotStatus")
     let copilotStatus = document.getElementById("copilotStatus")
     let fuelStatus = document.getElementById("fuelStatus")
@@ -89,12 +88,10 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
 
     }
 
-
-    if (launch_checks_passed = true) {
+    if (launch_checks_passed = true && form_input_passed == true) {
         launchStatus.innerHTML = "Shuttle is ready for launch"
         launchStatus.style.color = 'green'
     }
-
 }
 
 
