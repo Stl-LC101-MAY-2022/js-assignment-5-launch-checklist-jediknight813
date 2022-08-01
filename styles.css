@@ -1,6 +1,10 @@
 * {
    color: white;
    font-family: sans-serif;
+   border: 0px;
+   padding: 0px;
+   top: 0px;
+   margin: 0;
 }
 body {
    background-color: rgb(51 65 85);
@@ -28,12 +32,17 @@ div {
    visibility: hidden;   
 }
 
+.Mission_Destination_List {
+   gap: 20px;
+   display: flex;
+   flex-direction: column;
+}
+
 #launchForm {
    background-color: rgb(30 41 59);
    text-align: center;
    margin: auto;
    width: 25%;
-   border: 3px solid black;
    padding: 10px;
    border-radius: 20px;
    order: 3;
@@ -51,7 +60,6 @@ form {
    text-align: center;
    margin: 50px auto;
    width: 50%;
-   border: 3px solid black;
    padding: 10px;
    border-radius: 20px;
 }
@@ -75,6 +83,15 @@ input:focus {
    max-height: 250px;
 }
 
+.header {
+   width: 95%;
+   height: 80px;
+   align-items: center;
+   padding-left: 5%;
+   overflow: hidden;
+   background-color: rgb(30 41 59);
+   display: flex;
+}
 
 img {
    border-radius: 20%;
@@ -87,7 +104,8 @@ img {
    text-align: center;
    margin: 50px auto;
    width: 50%;
-   border: 3px solid black;
+   height: auto;
+   gap: 30px;
    padding: 10px;
    border-radius: 20px;
 }

@@ -7,7 +7,7 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
     missionTarget.innerHTML = `
         <h2>Mission Destination</h2>
         <img src=${imageUrl}>
-            <ol>
+            <ol class="Mission_Destination_List">
                 <li>Name: ${name}</li>
                 <li>Diameter: ${diameter}</li>
                 <li>Star: ${star}</li>
