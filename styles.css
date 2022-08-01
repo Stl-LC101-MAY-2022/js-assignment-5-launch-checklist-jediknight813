@@ -1,5 +1,27 @@
+* {
+   color: white;
+   font-family: sans-serif;
+   border: 0px;
+   padding: 0px;
+   top: 0px;
+   margin: 0;
+}
+body {
+   background-color: rgb(51 65 85);
+   display: flex;
+   flex-direction: column;
+}
+
 h1 {
    text-align: center;
+}
+
+ol {
+   list-style: none;
+   align-self: center;
+   text-align: center;
+   list-style-position: inside;
+   padding-right: 40px;
 }
 
 div {
@@ -10,22 +32,50 @@ div {
    visibility: hidden;   
 }
 
+.Mission_Destination_List {
+   gap: 20px;
+   display: flex;
+   flex-direction: column;
+}
+
 #launchForm {
-   background-color: #ECF0F1;
+   background-color: rgb(30 41 59);
    text-align: center;
    margin: auto;
    width: 25%;
-   border: 3px solid black;
    padding: 10px;
+   border-radius: 20px;
+   order: 3;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   align-items: center;
 }
 
 #launchStatusCheck {
-   background-color: #ECF0F1;
+   background-color: rgb(30 41 59);
    text-align: center;
    margin: 50px auto;
    width: 50%;
-   border: 3px solid black;
    padding: 10px;
+   border-radius: 20px;
+}
+
+input {
+   color: white;
+   background-color: rgb(15 23 42);
+   outline: none;
+   padding: 8px;
+   margin-left: 5px;
+   border: 0px;
+   border-radius: 5px;
+}
+
+input:focus {
+   outline:none;
 }
 
 #missionTarget img {
@@ -33,13 +83,31 @@ div {
    max-height: 250px;
 }
 
+.header {
+   width: 95%;
+   height: 80px;
+   align-items: center;
+   padding-left: 5%;
+   overflow: hidden;
+   background-color: rgb(30 41 59);
+   display: flex;
+}
+
+img {
+   border-radius: 20%;
+}
 #missionTarget {
-   background-color: #ECF0F1;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: rgb(30 41 59);
    text-align: center;
    margin: 50px auto;
    width: 50%;
-   border: 3px solid black;
+   height: auto;
+   gap: 30px;
    padding: 10px;
+   border-radius: 20px;
 }
 
 button {
