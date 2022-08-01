@@ -4,6 +4,8 @@
 }
 body {
    background-color: rgb(51 65 85);
+   display: flex;
+   flex-direction: column;
 }
 
 h1 {
@@ -34,6 +36,7 @@ div {
    border: 3px solid black;
    padding: 10px;
    border-radius: 20px;
+   order: 3;
 }
 
 form {
@@ -72,6 +75,10 @@ input:focus {
    max-height: 250px;
 }
 
+
+img {
+   border-radius: 20%;
+}
 #missionTarget {
    display: flex;
    flex-direction: column;
